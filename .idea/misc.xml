@@ -4,7 +4,7 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/library.management.system.dbconnection/pom.xml" />
+        <option value="$PROJECT_DIR$/library.management.system.common/pom.xml" />
       </list>
     </option>
   </component>
