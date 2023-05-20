@@ -30,7 +30,7 @@ import java.util.Objects;
 
 public class Main extends Application {
 
-    final static float VERSION = 4.0f;
+    final static float VERSION = 5.0f;
 
     @Override
     public void start(Stage stage) throws IOException {
