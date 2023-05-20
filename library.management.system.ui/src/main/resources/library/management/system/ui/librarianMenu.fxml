@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="librarianMenuPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="603.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.management.system.ui.ControllerLibrarianMenu">
+   <children>
+      <MenuBar layoutY="-3.0" prefHeight="16.0" prefWidth="603.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#exit" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#about" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Button layoutX="41.0" layoutY="135.0" mnemonicParsing="false" onAction="#searchBook" prefHeight="78.0" prefWidth="82.0" text="Search&#10;Book " textAlignment="CENTER" />
+      <Button layoutX="417.0" layoutY="248.0" mnemonicParsing="false" onAction="#createOnHoldReq" prefHeight="78.0" prefWidth="82.0" text="Place&#10;Book&#10;on hold" textAlignment="CENTER" />
+      <Button layoutX="41.0" layoutY="389.0" mnemonicParsing="false" onAction="#getUsersInfo" prefHeight="78.0" prefWidth="82.0" text="Borrowers&#10;Info" textAlignment="CENTER" />
+      <Button layoutX="147.0" layoutY="389.0" mnemonicParsing="false" onAction="#getBorrowersFines" prefHeight="78.0" prefWidth="82.0" text="Fines&#10;of &#10;Borrower" textAlignment="CENTER" />
+      <Button layoutX="484.0" layoutY="135.0" mnemonicParsing="false" onAction="#getBookHoldRequests" prefHeight="78.0" prefWidth="82.0" text="Books&#10;hold &#10;requests" textAlignment="CENTER" />
+      <Button layoutX="242.0" layoutY="504.0" mnemonicParsing="false" onAction="#logOut" prefHeight="25.0" prefWidth="119.0" text="Log Out" />
+      <Label alignment="CENTER" layoutX="1.0" layoutY="50.0" prefHeight="30.0" prefWidth="603.0" text="Welcome to Librarians Portal">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="99.0" layoutY="248.0" mnemonicParsing="false" onAction="#loanBook" prefHeight="78.0" prefWidth="82.0" text="Check out&#10;(borrow)&#10;Book" textAlignment="CENTER" />
+      <Button layoutX="201.0" layoutY="248.0" mnemonicParsing="false" onAction="#returnBook" prefHeight="78.0" prefWidth="82.0" text="Check in&#10;(return)&#10;Book" textAlignment="CENTER" />
+      <Button layoutX="314.0" layoutY="248.0" mnemonicParsing="false" onAction="#renewBook" prefHeight="78.0" prefWidth="82.0" text="Renew &#10;Book" textAlignment="CENTER" />
+      <Button layoutX="262.0" layoutY="389.0" mnemonicParsing="false" onAction="#addBorrower" prefHeight="78.0" prefWidth="82.0" text="Add&#10;Borrower" textAlignment="CENTER" />
+      <Button layoutX="376.0" layoutY="389.0" mnemonicParsing="false" onAction="#updateBorrower" prefHeight="78.0" prefWidth="82.0" text="Update&#10;Borrower" textAlignment="CENTER" />
+      <Button layoutX="147.0" layoutY="135.0" mnemonicParsing="false" onAction="#addBook" prefHeight="78.0" prefWidth="82.0" text="Add&#10;Book" textAlignment="CENTER" />
+      <Button layoutX="261.0" layoutY="135.0" mnemonicParsing="false" onAction="#removeBook" prefHeight="78.0" prefWidth="82.0" text="Remove&#10;Book" textAlignment="CENTER" />
+      <Button layoutX="376.0" layoutY="135.0" mnemonicParsing="false" onAction="#updateBook" prefHeight="78.0" prefWidth="82.0" text="Update&#10;Book" textAlignment="CENTER" />
+      <Button layoutX="484.0" layoutY="389.0" mnemonicParsing="false" onAction="#getUsersInfo" prefHeight="78.0" prefWidth="82.0" text="Clerks&#10;Info" textAlignment="CENTER" />
+      <Line endX="114.0" layoutX="123.0" layoutY="110.0" startX="-100.0" />
+      <Label layoutX="249.0" layoutY="97.0" text="Book options" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Line endX="143.0" layoutX="438.0" layoutY="109.0" startX="-73.0" />
+      <Line endX="114.0" layoutX="123.0" layoutY="364.0" startX="-100.0" />
+      <Label layoutX="248.0" layoutY="351.0" text="Users options" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Line endX="134.0" layoutX="449.0" layoutY="363.0" startX="-78.0" />
+   </children>
+</AnchorPane>

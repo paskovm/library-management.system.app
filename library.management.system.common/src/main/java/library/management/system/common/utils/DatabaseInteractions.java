@@ -1,6 +1,7 @@
 package library.management.system.common.utils;
 
 import library.management.system.common.entities.Book;
+import library.management.system.common.entities.HoldRequest;
 import library.management.system.common.entities.Loan;
 
 import java.sql.*;
@@ -310,6 +311,12 @@ public class DatabaseInteractions {
                            "\" WHERE Borrower = " + loan.getBorrower().getId() + " AND Book = " + loan.getBook().getBookId() +
                            " AND FinePaid = " + false;
 
+        return updateDb(statement);
+    }
+
+    public static int createHoldRequest(HoldRequest holdRequest) {
+        String statement = "INSERT INTO LMS.HOLDREQUEST VALUES (" + holdRequest.getBorrower().getId() + ", " + holdRequest.getBook().getBookId() +
+                           ", \"" + holdRequest.getRequestDate() + "\")";
         return updateDb(statement);
     }
 

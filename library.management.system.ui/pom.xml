@@ -29,13 +29,22 @@
       <version>4.13.2</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-graphics</artifactId>
+      <version>17.0.2</version>
+    </dependency>
+    <dependency>
+      <groupId>com.metodipaskov</groupId>
+      <artifactId>library.management.system.common</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <scope>compile</scope>
+    </dependency>
 
   </dependencies>
 
   <build>
-
     <plugins>
-
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -45,7 +54,6 @@
           <target>11</target>
         </configuration>
       </plugin>
-
       <plugin>
         <groupId>org.openjfx</groupId>
         <artifactId>javafx-maven-plugin</artifactId>
@@ -56,7 +64,7 @@
             <id>default-cli</id>
             <configuration>
               <mainClass>
-                com.example.librarymanagementsystemui/com.metodipaskov.Main
+                library.management.system.ui.Main
               </mainClass>
               <launcher>app</launcher>
               <jlinkZipName>app</jlinkZipName>
@@ -68,9 +76,7 @@
           </execution>
         </executions>
       </plugin>
-
     </plugins>
-
   </build>
 
 </project>

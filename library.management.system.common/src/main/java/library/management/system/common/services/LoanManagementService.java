@@ -99,7 +99,7 @@ public class LoanManagementService {
         if (usersLoans.size() > 0) {
             double finesSum = 0;
             System.out.println(System.lineSeparator() + "======== Following Loans are available for user "
-                    + borrower.getFirstName() + " " + borrower.getLastName() + " ========");
+                               + borrower.getFirstName() + " " + borrower.getLastName() + " ========");
             for (Loan loan : usersLoans) {
                 if (!loan.isFinePaid()) {
                     loan.printInfo();
@@ -109,6 +109,16 @@ public class LoanManagementService {
             System.out.println(System.lineSeparator() + "-----------------------");
             System.out.println("Fine(s) sum is = $" + finesSum);
         }
+    }
+
+    public List<Loan> getBorrowersFines(Borrower borrower) {
+        List<Loan> usersNotCompletedLoans = new ArrayList<>();
+        for (Loan loan : loans) {
+            if (borrower.equals(loan.getBorrower()) && !loan.isFinePaid()) {
+                usersNotCompletedLoans.add(loan);
+            }
+        }
+        return usersNotCompletedLoans;
     }
 
     public double getBorrowersFine(Borrower borrower, Book book) {

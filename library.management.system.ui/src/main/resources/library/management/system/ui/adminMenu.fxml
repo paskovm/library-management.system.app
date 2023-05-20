@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminMenuPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="603.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.management.system.ui.ControllerAdminMenu">
+   <children>
+      <Button layoutX="81.0" layoutY="147.0" mnemonicParsing="false" onAction="#createClerk" prefHeight="78.0" prefWidth="82.0" text="Add Clerk" />
+      <Button layoutX="250.0" layoutY="147.0" mnemonicParsing="false" onAction="#updateClerk" prefHeight="78.0" prefWidth="82.0" text="Update &#10;Clerk &#10;Info" textAlignment="CENTER" />
+      <Button layoutX="422.0" layoutY="147.0" mnemonicParsing="false" onAction="#createLibrarian" prefHeight="78.0" prefWidth="82.0" text="Add &#10;Librarian" textAlignment="CENTER" />
+      <Button layoutX="81.0" layoutY="289.0" mnemonicParsing="false" onAction="#viewAllUsers" prefHeight="78.0" prefWidth="82.0" text="View &#10;All &#10;Users" textAlignment="CENTER" />
+      <Button layoutX="250.0" layoutY="289.0" mnemonicParsing="false" onAction="#viewAllIssuedBooks" prefHeight="78.0" prefWidth="82.0" text="View &#10;Loaned &#10;Books" textAlignment="CENTER" />
+      <Button layoutX="422.0" layoutY="289.0" mnemonicParsing="false" onAction="#viewAllBooks" prefHeight="78.0" prefWidth="82.0" text="View &#10;All &#10;Books" textAlignment="CENTER" />
+      <Button layoutX="232.0" layoutY="433.0" mnemonicParsing="false" onAction="#logOut" prefHeight="25.0" prefWidth="119.0" text="Log Out" />
+      <MenuBar layoutY="-3.0" prefHeight="16.0" prefWidth="603.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#exit" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#about" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label alignment="CENTER" layoutX="1.0" layoutY="50.0" prefHeight="30.0" prefWidth="603.0" text="Welcome to the Admins Portal">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
