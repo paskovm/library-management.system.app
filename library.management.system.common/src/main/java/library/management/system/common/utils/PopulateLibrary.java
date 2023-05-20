@@ -67,6 +67,9 @@ public class PopulateLibrary {
                     holdRequest.setRequestDate(requestDate);
 
                     holdRequests.add(holdRequest);
+
+                    Borrower user = (Borrower) userService.getUserById(holdRequest.getBorrower().getId());
+                    user.addHoldRequest(holdRequest);
                 }
             }
         }
@@ -109,6 +112,9 @@ public class PopulateLibrary {
                     loan.setFinePaid(finePaid);
 
                     loans.add(loan);
+
+                    Borrower user = (Borrower) userService.getUserById(loan.getBorrower().getId());
+                    user.addLoan(loan);
                 }
             }
         }

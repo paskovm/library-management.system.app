@@ -51,6 +51,7 @@ public class Loan {
     }
 
     public double getBorrowersFine() {
+        borrowersFine = calculateFine();
         return borrowersFine;
     }
 
