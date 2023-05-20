@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="userInfoPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="603.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.management.system.ui.ControllerCheckUserInfo">
+   <children>
+      <Button layoutX="243.0" layoutY="475.0" mnemonicParsing="false" onAction="#goBack" prefHeight="25.0" prefWidth="119.0" text="Back">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <MenuBar layoutY="-3.0" prefHeight="16.0" prefWidth="603.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#exit" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#about" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label fx:id="topLabel" alignment="CENTER" layoutX="1.0" layoutY="50.0" prefHeight="30.0" prefWidth="603.0" text="Users Info Portal">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="userInputLabel" layoutX="89.0" layoutY="130.0" prefHeight="40.0" prefWidth="100.0" text="Enter users id, &#10;full name or email:" textAlignment="CENTER" />
+      <TextField fx:id="userInput" layoutX="190.0" layoutY="130.0" prefHeight="40.0" prefWidth="223.0" />
+      <Button fx:id="submitButton" layoutX="485.0" layoutY="137.0" mnemonicParsing="false" onAction="#submitUserSearch" text="submit" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <TextArea fx:id="usersInfo" editable="false" layoutX="191.0" layoutY="189.0" prefHeight="211.0" prefWidth="223.0" />
+      <Label layoutX="139.0" layoutY="266.0" text="Details:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button fx:id="resetButton" layoutX="487.0" layoutY="261.0" mnemonicParsing="false" onAction="#clearUserToUpdate" prefHeight="30.0" prefWidth="63.0" text="reset" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
